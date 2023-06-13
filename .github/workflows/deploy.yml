@@ -4,12 +4,15 @@ on:
     branches: main
   pull_request:
     branches: main
+env:
+  DATABASE_URL: ${{ secrets.GITHUB_TOKEN }}
+  SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+  SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    environment: TodoApp
     permissions:
       id-token: write # Needed for auth with Deno Deploy
       contents: read # Needed to clone the repository

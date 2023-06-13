@@ -33,6 +33,7 @@ jobs:
           DATABASE_URL: ${{ vars.DATABASE_URL }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_KEY: ${{ vars.SUPABASE_KEY }}
+          NITRO_PRESET: deno npm run build
         
 
       - name: Upload to Deno Deploy

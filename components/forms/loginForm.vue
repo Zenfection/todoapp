@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import autoAnimate from '@formkit/auto-animate'
 
 // const supabase = useSupabaseClient()
@@ -114,4 +114,4 @@ onMounted(() => {
 .formkit-outer {
   margin-bottom: 1em;
 }
-</style>
+</style> -->

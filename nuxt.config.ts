@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
-    '@formkit/nuxt',
     '@nuxt/devtools',
     ['@nuxtjs/supabase', {}],
     [

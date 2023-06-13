@@ -39,5 +39,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "important-starling-87"
-          entrypoint: "server/index.ts" # 📝 Update the entrypoint
+          entrypoint: "server/index.mjs" # 📝 Update the entrypoint
           root: ".output"

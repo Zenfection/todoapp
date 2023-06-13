@@ -23,6 +23,7 @@ const submitHandle = async () => {
   if (error) {
     alert(error.message)
   } else {
+    console.log(data)
     alert('Đăng nhập thành công')
     navigateTo('/')
   }

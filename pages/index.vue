@@ -1,18 +1,17 @@
 <script setup lang="ts">
-const users = ref([])
+import { Users } from '~/utils/types'
+import { UserService } from '~/services'
 
-onMounted(async () => {
-  users.value = await fetch('/api/users').then((res) => res.json())
-})
+const users = ref<Users[]>(await UserService.getUsers())
 </script>
 
 <template>
   <div>
     <h1>Users</h1>
     <ul>
-      <li v-for="user in users" :key="user.id">
+      <li v-for="user in users" :key="user.id.toString">
         {{ user.name }}
-        <br>
+        <br />
         {{ user.email }}
       </li>
     </ul>

@@ -1,8 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    '@nuxtjs/tailwindcss',
     '@formkit/nuxt',
     '@nuxt/devtools',
+    ['@nuxtjs/supabase', {}],
     [
       '@pinia/nuxt',
       {

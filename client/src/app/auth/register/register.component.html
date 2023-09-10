@@ -1,1 +1,7 @@
-<p>register works!</p>
+<div>
+  <app-shared (submitted)="registerUser($event)">
+    <h1>Register</h1>
+    <a routerLink="/login"> Already have an account? Login here. </a>
+    <button type="submit">Create Account</button>
+  </app-shared>
+</div>

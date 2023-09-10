@@ -1,1 +1,7 @@
-<p>login works!</p>
+<div>
+  <app-shared (submitted)="loginUser($event)">
+    <h1>Login</h1>
+    <a routerLink="/register"> Don't have an account? Register here. </a>
+    <button type="submit">Login</button>
+  </app-shared>
+</div>
